@@ -1,0 +1,10 @@
+/* pages/goods/goodsdetail.wxss */
+canvas{
+  width: 100%;
+  height: 400px;
+  background-color: gray;
+}
+button{
+    background-color: red;
+    margin-left: 20rpx;
+}

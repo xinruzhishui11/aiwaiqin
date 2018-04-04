@@ -1,0 +1,48 @@
+<!--index.wxml-->
+<view class="container">  
+    <view class='header'>
+      <view class='address'>
+        <text>南京</text>
+      </view>
+      <view class='search'>
+        <image src='../../images/icon_search.png'></image>
+        <input placeholder="搜索商品和店铺" focus="{{focus}}" />
+      </view>
+    </view>
+
+    <view class='navigator'>
+      <view class='navigator-list'>
+          <view data-text='{{item.tabText}}' class='navigator-item'  wx:for='{{navigatorList}}' bindtap='itemClick'>
+            <text class="{{item.selected ? 'item-text-selected':'item-text-unselected'}}">{{item.tabText}}</text>
+          </view>
+      </view>
+      <!-- {{item.selected ? item-text-selected:item-text-unselected}} -->
+     
+      <view class='navigator-img'>
+          <image class='arrow' src='../../images/icon_down_arrow.png'></image>
+      </view>
+    
+    </view>
+
+    <view class='content'>
+      <view class='content-sort'>
+        <text>综合排序</text>
+        <image class='arrow' src='../../images/icon_down_arrow.png'></image>
+      </view>
+
+      <view class='content-item' wx:for="{{orderList}}">
+        <image  class='content-image' src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+
+        <view class='content-item-detail'>
+          <text class='item-title'>{{item.title}}</text>
+          <text class='item-price'>￥{{item.price}}</text>
+          <text class='item-buy-num'>{{item.orderNum}}人付款</text>
+        </view>
+
+        <view data-order='{{item}}' class='content-item-order' catchtap='clickOrder'>
+          <text>下订单</text>
+        </view>
+      </view>
+
+    </view>
+</view>

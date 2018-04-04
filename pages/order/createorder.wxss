@@ -1,0 +1,97 @@
+
+.order-con{
+  width: 100%;
+  height: 250rpx;
+  background: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1px;
+}
+.order-con-img{
+  width: 30%;
+  height: 200rpx;
+  margin-left: 20rpx;
+}
+
+.order-con-title{
+  width: 70%;
+  margin: 30rpx 20rpx 0 20rpx;
+  align-self: flex-start;
+  flex-shrink: 1;
+}
+
+.order-operation{
+  margin-top: 1px;
+  display: flex;
+  background-color: white;
+  padding: 4%;
+  width: 92%;
+  margin-bottom: 5px;
+  justify-content: space-between
+}
+.order-spec{
+
+}
+
+.order-change-num{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.order-change-num image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.order-num{
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.selection{
+  background-color: white;
+  padding: 4%;
+  width: 92%;
+  margin-top: 1px;
+  display: flex;
+  align-items: center;
+}
+
+.order-info input{
+  font-size: 36rpx;
+  flex-grow: 1;
+}
+.order-address-manager{
+  color: red;
+  margin-left: 20rpx;
+  font-size: 36rpx;
+}
+.item-lable{
+  font-size: 36rpx;
+  color: #4E4E4E;
+  margin-right: 20rpx;
+}
+
+.order-foot{
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   background-color: white;
+}
+.order-selection{
+  display: flex;
+  width: 96%;
+  padding: 2%;
+  justify-content: space-between;
+  align-items: center;
+}
+.order-submit{
+  background-color: red;
+  width: 40%;
+  margin-right: 10rpx;
+  color: white;
+}
+.order-price{
+  color: red;
+}

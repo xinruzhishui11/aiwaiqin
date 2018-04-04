@@ -1,0 +1,155 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    width: 96%;
+    padding: 2%;
+}
+
+.address {
+    color: black;
+    font-size: 20px;
+    width: 20%;
+    text-align: center;
+}
+
+.search {
+    background-color: #ededed;
+    width: 80%;
+    height: 100rpx;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.search image {
+    height: 60rpx;
+    width: 60rpx;
+    padding-top: 10rpx;
+    padding-bottom: 10rpx;
+    margin-left: 20rpx;
+}
+
+.search input {
+    padding-top: 10rpx;
+    padding-bottom: 10rpx;
+}
+
+.navigator {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    align-items: center;
+    width: 96%;
+    padding: 2%;
+    height: 100rpx;
+    margin-top: 1px;
+}
+
+.navigator-list {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+}
+
+.navigator-item {
+    flex-grow: 1;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*选中状态  */
+
+.item-text-selected {
+    color: #5eb0f6;
+}
+
+/*未选中状态  */
+
+.item-text-unselected {
+    color: black;
+}
+
+.navigator-img {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 1;
+}
+
+.arrow {
+    width: 40rpx;
+    height: 40rpx;
+}
+
+.content {
+    width: 92%;
+    padding: 4%;
+    height: 350rpx;
+    background-color: white;
+}
+
+.content-sort {
+    display: flex;
+    height: 100rxp;
+    margin-top: 20rpx;
+    flex-direction: row;
+    background-color: white;
+    align-items: center;
+    border-bottom: 1px solid #f1f6f8;
+}
+
+.content-item {
+    width: 100%;
+    height: 250rpx;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.content-image {
+    width: 200rpx;
+    height: 190rpx;
+}
+
+.content-item-detail {
+    display: flex;
+    margin-left: 30rpx;
+    flex-direction: column;
+    height: 100%;
+    width: 45%;
+}
+
+.item-title {
+    margin-top: 30rpx;
+}
+
+.item-price {
+    color: red;
+    margin-top: 20rpx;
+}
+
+.item-buy-num {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.content-item-order {
+    background-color: #5eb0f6;
+    width: 200rpx;
+    height: 80rpx;
+    border-radius: 20rpx;
+    color: white;
+    line-height: 80rpx;
+    text-align: center;
+}

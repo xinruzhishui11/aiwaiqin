@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/goods/goodsdetail",
+    "pages/index/index",
+    "pages/order/createorder",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "aiwaiqin",
+    "navigationBarTextStyle":"black"
+  }
+}

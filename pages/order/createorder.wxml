@@ -1,0 +1,49 @@
+<view class='container'>
+    <view class='order-con'>
+        <image class='order-con-img' src='http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'></image>
+
+        <text class='order-con-title'>{{orderDetail.title}}</text>
+
+    </view>
+
+    <view class='order-operation'>
+
+        <view class='order-spec'>
+            <text>颜色:红色</text>
+            <text>尺寸:15寸</text>
+        </view>
+
+        <view class='order-change-num'>
+            <image src='../../images/icon_order_reduce.png' bindtap='reduceOrderNum'></image>
+            <text class='order-num'>{{orderNum}}</text>
+            <image src='../../images/icon_order_add.png' bindtap='addOrderNum'></image>
+        </view>
+    </view>
+
+    <view class='selection'>
+        <text class='item-lable'>客户名称</text>
+        <input placeholder='自动定位当前用户地址' focus='{{focus}}'></input>
+        <text class='order-address-manager'>地址簿</text>
+    </view>
+    <view class='selection'>
+        <text class='item-lable'>配送方式</text>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{deliverMetArr}}">
+            <view class="item-lable">
+                {{deliverMetArr[index]}}
+            </view>
+        </picker>
+    </view>
+    <view class='selection'>
+        <text class='item-lable'>到店时间</text>
+        <text>2017-11-12 8:00</text>
+    </view>
+
+    <view class='order-foot'>
+        <view class='order-selection'>
+            <text>商品金额:</text>
+            <text class='order-price'>￥{{totalPrice}}</text>
+            <button class='order-submit'>提交</button>
+        </view>
+    </view>
+
+</view>
